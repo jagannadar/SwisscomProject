@@ -1,0 +1,16 @@
+# Cypress generated files
+/cypress/screenshots
+
+# Cypress environment file
+cypress.env.json
+
+# Node modules
+node_modules
+
+# Editor directories and files
+.vscode
+.idea
+
+# Operating System files
+Thumbs.db
+.DS_Store
