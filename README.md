@@ -16,10 +16,7 @@ NodeJS --> you can install nvm (macOS/Linux, Windows), then run nvm install lts 
 .
 └── cypress
 ├── fixtures
-├── integration
-├── plugins
 ├── screenshots
 ├── support
 ├── videos
-├── cypress.json
 └── README.md
