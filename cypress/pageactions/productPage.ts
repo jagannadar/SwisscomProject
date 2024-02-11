@@ -16,7 +16,9 @@ class ProductPage extends BasePage {
         priceType: () => cy.dataCy('price-type-radio-input-monthly'),
         contractDuration: () => cy.dataCy('contract-duration-radio-input-24'),
         shoppingCartPopup: () => cy.dataCy('go-to-cart-button'),
-        shoppingCartIcon: () => cy.get('[data-track-label="basket"]')
+        shoppingCartIcon: () => cy.get('[data-track-label="basket"]'),
+        selectedFilter: () => cy.get('.clickable.button-reset.chip')
+
     }
 
     selectBrandDropdown(): this {
@@ -25,13 +27,13 @@ class ProductPage extends BasePage {
     }
 
     selectFirstBrand(): this {
-        cy.get('sdx-select-list.open').children().first().click();
-        this.productPageElements.loadMore().scrollIntoView().should('be.visible');
+        this.productPageElements.brandsList().children().first().click();
+        this.productPageElements.selectedFilter().eq(1).scrollIntoView().should('be.visible');
         return this;
     }
 
     selectLastAvailableProduct(): this {
-       this.productPageElements.availableProducts().last().click();
+      this.productPageElements.availableProducts().eq(-1).click();
         return this;
     }
 

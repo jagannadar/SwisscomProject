@@ -30,8 +30,7 @@ describe('shopping cart functionality', () => {
             .clickShoppingCartIcon();
 
         shoppingCartPage.verifyPageUrl()
-            .verifyProductTitle();
-    
+            .verifyProductTitle();   
     });
     
 });
