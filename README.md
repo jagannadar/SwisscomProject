@@ -21,14 +21,14 @@ And describe test specs (e2e folder) - things/flows we want to test and verify o
 
 
 ## Folder Structure
-.
-├── e2e                   # contains spec files/tests to verify
-├── fixtures              # place to store testdata that your testcase needs
-├── pageactions           # contains classes which describes elements and interactions that can be performed
-├── screenshots           # contains failed testcase screenshots
-├── support               # contains custom commands and global configuration
-├── videos                # video recordings of your test runs 
-└── README.md
+.<br />
+├── e2e                   # contains spec files/tests to verify <br />
+├── fixtures              # place to store testdata that your testcase needs <br /> 
+├── pageactions           # contains classes which describes elements and interactions <br />
+├── screenshots           # contains failed testcase screenshots <br />
+├── support               # contains custom commands and global configuration <br />
+├── videos                # video recordings of your test runs <br />
+
 
 ## Creating Page Objects
 Page Objects represent the pages of the application and encapsulate the locators and interactions with the elements on those pages. Each page should have a corresponding Page Object class.
